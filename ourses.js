@@ -34,6 +34,7 @@ const res = (arr, renge) => {
         repl(cours.prices);
         // Проверяем, пересекаются ли массивы и добавляем название курса в результат
         // если конец requiredRange больше или равен началу cours.prices и начало requiredRange меньше конца cours.prices
+        // для того, чтобы избежать попадания курсов, дешевле запроса
         if(renge[1] >= cours.prices[0] && renge[0] <= cours.prices[1]){
             ress.push(cours.name)
         }
